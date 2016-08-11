@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{15C81628-470A-45A3-8684-63CC8A57F28B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AE4C5DDD-3D94-47E2-81DE-5CDB9FE6C6F5}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SerializerExtensions", "src\SerializerExtensions\SerializerExtensions.xproj", "{4B830916-735D-49CB-8364-18CF55F6BCC0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{2D9CCFB8-3FFA-423F-A294-B49EA8087E7F}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SerializerExtensions.Tests", "test\SerializerExtensions.Tests\SerializerExtensions.Tests.xproj", "{0A668811-BE57-4751-90D3-F0E1D3E3EF39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B830916-735D-49CB-8364-18CF55F6BCC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B830916-735D-49CB-8364-18CF55F6BCC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B830916-735D-49CB-8364-18CF55F6BCC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B830916-735D-49CB-8364-18CF55F6BCC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A668811-BE57-4751-90D3-F0E1D3E3EF39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A668811-BE57-4751-90D3-F0E1D3E3EF39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A668811-BE57-4751-90D3-F0E1D3E3EF39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A668811-BE57-4751-90D3-F0E1D3E3EF39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4B830916-735D-49CB-8364-18CF55F6BCC0} = {15C81628-470A-45A3-8684-63CC8A57F28B}
+		{0A668811-BE57-4751-90D3-F0E1D3E3EF39} = {2D9CCFB8-3FFA-423F-A294-B49EA8087E7F}
+	EndGlobalSection
+EndGlobal

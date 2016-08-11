@@ -1,0 +1,55 @@
+{
+  "version": "1.0.0-alpha01",
+  "title": "Xml Serializer Extensions",
+  "description": "Easy helper for XmlSerializer",
+  "authors": [ "Filipe Dias" ],
+  "copyright": "Copyright © 2016 Filipe Dias",
+  "packOptions": {
+    "summary": "Xml Serializer Extensions",
+    "tags": [ "XmlSerializer", "Serializer", "Xml", "XmlDocument", "SOAP", "HTTP SOAP Client", "Web Client" ],
+    "projectUrl": "",
+    "licenseUrl": "",
+    "iconUrl": "",
+    "owners": [ "Filipe Dias" ],
+    "repository": {
+      "type": "git",
+      "url": ""
+    }
+  },
+  "frameworks": {
+    "net4.5": {
+      "frameworkAssemblies": {
+        "System.IO": { "type": "build" },
+        "System.Linq": { "type": "build" },
+        "System.Runtime": { "type": "build" },
+        "System.Xml": { "type": "build" },
+        "System.Xml.Linq": { "type": "build" },
+        "System.Xml.XDocument": { "type": "build" },
+        "System.Xml.XmlSerializer": { "type": "build" }
+      },
+      "dependencies": {
+        "Microsoft.NETCore.Platforms": "1.0.1"
+      }
+    },
+    "netcore5.0": {
+      "dependencies": {
+        "Microsoft.CSharp": "4.0.1",
+        "System.Collections": "4.0.11",
+        "System.IO": "4.1.0",
+        "System.IO.FileSystem": "4.0.1",
+        "System.Linq": "4.1.0",
+        "System.Xml.XDocument": "4.0.11",
+        "System.Xml.XmlDocument": "4.0.1",
+        "System.Xml.XmlSerializer": "4.0.11",
+        "System.Reflection": "4.1.0",
+        "System.Reflection.Extensions": "4.0.1",
+        "System.Runtime.Extensions": "4.1.0",
+        "System.Runtime.InteropServices": "4.1.0",
+        "System.Runtime": "4.1.0",
+        "System.Text.RegularExpressions": "4.1.0",
+        "System.Reflection.TypeExtensions": "4.1.0",
+        "System.Threading": "4.0.11"
+      }
+    }
+  }
+}
