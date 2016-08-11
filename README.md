@@ -4,7 +4,12 @@ Utils extension methods for XmlSerializer
 
 ===================
 
-[![NuGet Downloads](http://img.shields.io/nuget/dt/SerializerExtensions.svg?style=flat)](https://www.nuget.org/packages/SerializerExtensions/)
+## Installation 
+This library can be installed via [NuGet](https://www.nuget.org/packages/SerializerExtensions/) package. Just run the following command:
+
+```powershell
+Install-Package SerializerExtensions -Pre
+```
 
 ## Major Features
 
@@ -20,14 +25,16 @@ The following major features are currently implemented:
 These extensions allow easy serialize object
 
 Example:
+```csharp
         var model = new Model { Id = 1, Description = "Example1" };
         var xmlString = model.Serialize();
-
+```
 ### Deserialize object:
 
 These extensions allow easy deserialize xml string to specific object
 
 Example:
+```csharp
         var xmlString = @"<?xml version='1.0'?>
 							<Model xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema'>
 							  <Id>113</Id>
@@ -35,7 +42,7 @@ Example:
 							</Model>";
 
 		var model = xmlString.Deserialize<Model>();
-
+```
 
 ## How to Contribute
 
