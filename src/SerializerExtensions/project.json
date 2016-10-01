@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-alpha01",
+  "version": "1.0.0-rc01",
   "title": "Xml Serializer Extensions",
   "description": "Easy helper for XmlSerializer",
   "authors": [ "Filipe Dias" ],
@@ -26,9 +26,6 @@
         "System.Xml.Linq": { "type": "build" },
         "System.Xml.XDocument": { "type": "build" },
         "System.Xml.XmlSerializer": { "type": "build" }
-      },
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.0.1"
       }
     },
     "netcore5.0": {

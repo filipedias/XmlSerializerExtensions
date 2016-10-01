@@ -24,10 +24,19 @@ The following major features are currently implemented:
 
 These extensions allow easy serialize object
 
-Example:
+Example1:
 ```csharp
         var model = new Model { Id = 1, Description = "Example1" };
         var xmlString = model.Serialize();
+```
+
+Example2:
+```csharp
+        var model = new Model { Id = 1, Description = "Example1" };
+        var namespaces = new XmlSerializerNamespaces();
+            namespaces.Add("dmn", "http://www.domain.com");
+
+		var xmlString = model.Serialize(namespaces);
 ```
 ### Deserialize object:
 
@@ -56,3 +65,5 @@ Also, this repository is built with autocrlf = true.
 
 v1.0.0-alpha01
 - Initial Version
+v1.0.0-rc01
+- Short improvements

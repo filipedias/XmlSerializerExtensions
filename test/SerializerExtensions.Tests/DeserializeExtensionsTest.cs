@@ -2,12 +2,6 @@
 using Ploeh.AutoFixture;
 using SerializerExtensions.Tests.Entities;
 using SerializerExtensions.Extensions;
-using System.Xml;
-using System.Xml.Serialization;
-using System;
-using System.IO;
-using System.Runtime.Serialization.Formatters.Binary;
-using System.Runtime.Serialization;
 
 namespace SerializerExtensions.Tests
 {
