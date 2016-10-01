@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-rc01",
+  "version": "1.0.0",
   "title": "Xml Serializer Extensions",
   "description": "Easy helper for XmlSerializer",
   "authors": [ "Filipe Dias" ],
@@ -7,7 +7,7 @@
   "packOptions": {
     "summary": "Xml Serializer Extensions",
     "tags": [ "XmlSerializer", "Serializer", "Xml", "XmlDocument", "SOAP", "HTTP SOAP Client", "Web Client" ],
-    "projectUrl": "",
+    "projectUrl": "https://github.com/filipedias/XmlSerializerExtensions",
     "licenseUrl": "",
     "iconUrl": "",
     "owners": [ "Filipe Dias" ],
