@@ -8,7 +8,7 @@ Utils extension methods for XmlSerializer
 This library can be installed via [NuGet](https://www.nuget.org/packages/SerializerExtensions/) package. Just run the following command:
 
 ```powershell
-Install-Package SerializerExtensions -Pre
+Install-Package SerializerExtensions
 ```
 
 ## Major Features
@@ -68,3 +68,6 @@ v1.0.0-alpha01
 
 v1.0.0-rc01
 - Short improvements
+
+v1.0.0
+- First final release
