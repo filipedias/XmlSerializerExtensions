@@ -65,5 +65,6 @@ Also, this repository is built with autocrlf = true.
 
 v1.0.0-alpha01
 - Initial Version
+
 v1.0.0-rc01
 - Short improvements
