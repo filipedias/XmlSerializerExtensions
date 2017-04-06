@@ -1,4 +1,4 @@
-﻿using NUnit.Framework;
+﻿using Xunit;
 using Ploeh.AutoFixture;
 using SerializerExtensions.Tests.Entities;
 using SerializerExtensions.Extensions;
@@ -11,10 +11,9 @@ using System.Runtime.Serialization;
 
 namespace SerializerExtensions.Tests
 {
-    [TestFixture]
     public class SerializeExtensionsTest : BaseUnitTest
     {
-        [Test]
+        [Fact]
         public void SerializerRandomModelWithExtensionsMethodNoErrors()
         {
             //Prepare
@@ -29,7 +28,7 @@ namespace SerializerExtensions.Tests
 
             Assert.True(xmlString == xmlStringConfirm);
         }
-        [Test]
+        [Fact]
         public void SerializerRandomModelWithNamespacesNoErrors()
         {
             //Prepare
@@ -47,7 +46,7 @@ namespace SerializerExtensions.Tests
             Assert.True(xmlString == xmlStringConfirm);
         }
 
-        [Test]
+        [Fact]
         public void SerializerRandomModelWithNamespacesHasException()
         {
             try
@@ -68,7 +67,7 @@ namespace SerializerExtensions.Tests
 
         }
 
-        [Test]
+        [Fact]
         public void DeserializerByteArrayNoErrors()
         {
             //Prepare
@@ -85,7 +84,7 @@ namespace SerializerExtensions.Tests
             Assert.True(xmlString == xmlStringConfirm);
         }
 
-        [Test]
+        [Fact]
         public void IsValidXmlFromRandomModelWithExtensionsMethodNoErrors()
         {
             //Prepare
@@ -98,7 +97,7 @@ namespace SerializerExtensions.Tests
             Assert.True(SerializerManager.IsValidXml(xmlString));
         }
 
-        [Test]
+        [Fact]
         public void SerializerRandomModelWithExtensionsToByteArrayNoErrors()
         {
             //Prepare
@@ -115,7 +114,7 @@ namespace SerializerExtensions.Tests
             Assert.True(xmlString == xmlStringConfirm);
         }
 
-        [Test]
+        [Fact]
         public void SerializerRandomModelWithExtensionsToFileNoErrors()
         {
             //Prepare
@@ -128,7 +127,7 @@ namespace SerializerExtensions.Tests
             var res = model.SerializeToFile(filePath, out ex);
 
             Assert.True(res);
-            Assert.IsNull(ex);
+            Assert.Null(ex);
         }
     }
 }

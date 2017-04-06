@@ -1,14 +1,13 @@
-﻿using NUnit.Framework;
+﻿using Xunit;
 using Ploeh.AutoFixture;
 using SerializerExtensions.Tests.Entities;
 using System;
 
 namespace SerializerExtensions.Tests
 {
-    [TestFixture]
     public class SerializeManagerTest : BaseUnitTest
     {
-        [Test]
+        [Fact]
         public void SerializerRandomModelNoErrors()
         {
             //Prepare
@@ -24,7 +23,7 @@ namespace SerializerExtensions.Tests
             Assert.True(xmlString == xmlStringConfirm);
         }
 
-        [Test]
+        [Fact]
         public void SerializerRandomModelWithErrors()
         {
             try
@@ -42,7 +41,7 @@ namespace SerializerExtensions.Tests
             }
         }
 
-        [Test]
+        [Fact]
         public void SerializerNullObjectWithErrors()
         {
             try
@@ -58,7 +57,7 @@ namespace SerializerExtensions.Tests
         }
 
 
-        [Test]
+        [Fact]
         public void SerializerStringNoErrors()
         {
             //Prepare
@@ -75,7 +74,7 @@ namespace SerializerExtensions.Tests
         }
 
 
-        [Test]
+        [Fact]
         public void IsValidXmlFromRandomModelNoErrors()
         {
             //Prepare
@@ -88,7 +87,7 @@ namespace SerializerExtensions.Tests
             Assert.True(SerializerManager.IsValidXml(xmlString));
         }
 
-        [Test]
+        [Fact]
         public void SerializerRandomModelToByteArrayNoErrors()
         {
             //Prepare
@@ -105,7 +104,7 @@ namespace SerializerExtensions.Tests
             Assert.True(xmlString == xmlStringConfirm);
         }
 
-        [Test]
+        [Fact]
         public void SerializerRandomModelToFileNoErrors()
         {
             //Prepare
@@ -119,10 +118,10 @@ namespace SerializerExtensions.Tests
 
             //Check
             Assert.True(res);
-            Assert.IsNull(ex);
+            Assert.Null(ex);
         }
 
-        [Test]
+        [Fact]
         public void DeserializerRandomModelMethodNoErrors()
         {
             //Prepare
@@ -138,7 +137,7 @@ namespace SerializerExtensions.Tests
             Assert.True(xmlString == xmlStringConfirm);
         }
 
-        [Test]
+        [Fact]
         public void DeserializerRandomModelWithErrors()
         {
             try
@@ -156,7 +155,7 @@ namespace SerializerExtensions.Tests
             }
         }
 
-        [Test]
+        [Fact]
         public void DeserializerRandomModelFromFileNoErrors()
         {
             //Prepare
@@ -172,7 +171,7 @@ namespace SerializerExtensions.Tests
             //Check
             var xmlStringConfirm = SerializerManager.Serialize<Model>(modelConfirm);
             Assert.True(res);
-            Assert.IsNull(ex);
+            Assert.Null(ex);
             Assert.True(xmlStringConfirm.Trim() == System.IO.File.ReadAllText(filePath).Trim());
         }
     }

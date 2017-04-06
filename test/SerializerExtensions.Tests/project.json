@@ -1,31 +1,24 @@
 {
   "version": "1.0.0-*",
+  "testRunner": "xunit",
   "buildOptions": {
     "optimize": true
   },
   "dependencies": {
-    "NUnit": "3.4.1",
-    "dotnet-test-nunit": "3.4.0-alpha-2",
-    "SerializerExtensions": { "target": "project" },
-    "AutoFixture.NUnit3": "3.49.1"
+    "AutoFixture": "3.50.2",
+    "dotnet-test-xunit": "2.2.0-preview2-build1029",
+    "Microsoft.DotNet.InternalAbstractions": "1.0.0", //https://github.com/dotnet/cli/issues/3759
+    "Newtonsoft.Json": "9.0.1",
+    "xunit": "2.2.0",
+    "SerializerExtensions": { "target": "project" }
   },
   "frameworks": {
-    "net451": {
-      "frameworkAssemblies": {
-        "System.IO": { "type": "build" },
-        "System.Linq": { "type": "build" },
-        "System.Net.Http": { "type": "build" },
-        "System.Runtime": { "type": "build" },
-        "System.Xml": { "type": "build" },
-        "System.Xml.Linq": { "type": "build" },
-        "System.Xml.XDocument": { "type": "build" },
-        "System.Xml.XmlSerializer": { "type": "build" }
-      },
+    "net46": {
       "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.0.1",
-        "Microsoft.Extensions.Testing.Abstractions": "1.0.0-preview2-003121",
-        "Microsoft.Extensions.DependencyModel": "1.0.0",
-        "NUnit.Portable.Agent-with-labels": "3.4.0-alpha7"
+        "Microsoft.NETCore.Platforms": "1.1.0"
+      },
+      "frameworkAssemblies": {
+        "System.Runtime": { "type": "build" }
       }
     }
   }
